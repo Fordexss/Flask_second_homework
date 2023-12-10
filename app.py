@@ -1,6 +1,4 @@
-import os
-
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template
 
 app = Flask('Oderman', template_folder="templates", static_folder="static")
 
@@ -25,9 +23,9 @@ def menu():
     return render_template("menu.html", menu_items=menu_items)
 
 
-@app.route('/menu_redirect')
-def menu_redirect():
-    return redirect(url_for('menu'))
+@app.route('/aboutUs')
+def about_us():
+    return render_template('about_us.html', title='Про нас', header='Інформація про нас')
 
 
 if __name__ == "__main__":

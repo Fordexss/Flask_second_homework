@@ -30,3 +30,27 @@ th {
     background-color: yellow;
     color: black;
 }
+
+
+body {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: yellow;
+}
+

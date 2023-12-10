@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="uk">
+{% extends 'layout_for_menu.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/menu.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Меню</title>
-</head>
-
-<body>
-
+{% block content %}
     <h1>Меню</h1>
 
     <table border="1">
@@ -30,7 +21,4 @@
             {% endfor %}
         </tbody>
     </table>
-
-</body>
-
-</html>
+{% endblock %}
